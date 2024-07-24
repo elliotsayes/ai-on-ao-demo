@@ -7,7 +7,7 @@ function CreatePrompt(systemPrompt, userContent)
 ]]
 end
 
-local userContent = "cats"
+local userContent = "dogs"
 
 local prompt = CreatePrompt(
   "Tell a short joke on the given topic",
@@ -29,3 +29,6 @@ Llama.run(
     table.insert(JOKE_HISTORY, joke)
   end
 )
+
+-- Example inference message:
+-- https://www.ao.link/#/message/FsScMla3HBpnEJyK8qbINsblfambo56F_83YBNZ5o0E
