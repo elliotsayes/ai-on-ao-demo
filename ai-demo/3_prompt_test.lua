@@ -10,7 +10,7 @@ end
 local userContent = "cats"
 
 local prompt = CreatePrompt(
-  "One-liner joke on the given topic",
+  "Tell a joke on the given topic",
   userContent
 );
 
