@@ -1,26 +1,31 @@
-local system = [[
-<|system|>
-Only tell jokes about cats
-<|end|>
+function CreatePrompt(systemPrompt, userContent)
+  return [[<|system|>
+]] .. systemPrompt .. [[<|end|>
 <|user|>
-]]
-
-local finish = [[<|end|>
+]] .. userContent .. [[<|end|>
 <|assistant|>
 ]]
+end
 
-local userContent = "Tell me a joke"
+local userContent = "cats"
 
-local prompt = system .. userContent .. finish
+local prompt = CreatePrompt(
+  "Tell a short joke on the given topic",
+  userContent
+);
 
-OUTPUTS = OUTPUTS or {}
+JOKE_HISTORY = JOKE_HISTORY or {}
 
--- Full inference arguments:
 Llama.run(
   prompt,                  -- Your prompt
-  20,                      -- Number of tokens to generate
+  30,                      -- Number of tokens to generate
   function(generated_text) -- Optional: A function to handle the response
-    print(generated_text)
-    table.insert(OUTPUTS, generated_text)
+    -- Read up until the first newline character
+    local joke = generated_text:match("(.+)\n")
+    if joke == nil then
+      return print("Could not find joke in: " .. generated_text)
+    end
+    print("Joke: " .. joke)
+    table.insert(JOKE_HISTORY, joke)
   end
 )
