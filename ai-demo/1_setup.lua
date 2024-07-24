@@ -31,4 +31,6 @@
 
 -- Load the Llama Herder library
 Llama = require("@sam/Llama-Herder")
+
+-- Get the prices
 Llama.getPrices()
