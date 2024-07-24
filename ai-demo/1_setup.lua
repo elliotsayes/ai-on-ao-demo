@@ -1,5 +1,5 @@
--- Send me some wrapped arweave!!
--- Go to aox.xyz to wrap your arweave tokens. Around 0.01 should be enough
+-- You'll need to send your process some wrapped arweave!
+-- Go to aox.xyz to wrap your arweave tokens. Just 0.001 should be enough
 -- You should see:
 -- New Message From xU9...h10: Action = Credit-Notice
 

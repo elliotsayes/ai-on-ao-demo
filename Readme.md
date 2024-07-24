@@ -1,9 +1,9 @@
 # AI on AO Demo
 
-To get started with AI on AO
+Getting started with AI on AO using the [Llama-Herder](https://github.com/permaweb/llama-herder) library.
 
 - Acquire some wrapped Arweave ($wAR) tokens
-  - To wrap some $AR, go to [aox.xyz](https://aox.xyz). Just `0.001` $wAR is more than enough to get started.
+  - To turn $AR into $wAR, go to [aox.xyz](https://aox.xyz). Just `0.001` $wAR is plenty to get started.
 - Spin up a new AOS process: `aos my-ai-process`
 - Transfer some $wAR tokens to the process, e.g. using ArConnect
 - Set up the `Llama-Herder` library as described here
