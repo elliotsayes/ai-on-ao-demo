@@ -7,10 +7,10 @@ function CreatePrompt(systemPrompt, userContent)
 ]]
 end
 
-local userContent = "dogs"
+local userContent = "cats"
 
 local prompt = CreatePrompt(
-  "Tell a short joke on the given topic",
+  "One-liner joke on the given topic",
   userContent
 );
 
@@ -20,8 +20,8 @@ Llama.run(
   prompt,                  -- Your prompt
   30,                      -- Number of tokens to generate
   function(generated_text) -- Optional: A function to handle the response
-    -- Read up until the first newline character
-    local joke = generated_text:match("(.+)\n")
+    -- Match up until the first newline character
+    local joke = generated_text:match("^(.-)\n")
     if joke == nil then
       return print("Could not find joke in: " .. generated_text)
     end
