@@ -1,6 +1,5 @@
 OUTPUTS = OUTPUTS or {}
 
--- Full inference arguments:
 Llama.run(
   "What is the meaning of life?", -- Your prompt
   20,                             -- Number of tokens to generate
