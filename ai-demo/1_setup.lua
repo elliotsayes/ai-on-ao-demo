@@ -10,7 +10,7 @@
 -- 📦 Loaded APM Client
 
 -- Update APM
--- aos> APM.update()
+-- aos> apm.update()
 
 -- 📤 Update request sent
 -- ℹ️ Attempting to load client 1.1.0
@@ -18,7 +18,7 @@
 -- ✨ Client has been updated to 1.1.0
 
 -- Install Llama-Herder
--- aos> APM.install("@sam/Llama-Herder")
+-- aos> apm.install("@sam/Llama-Herder")
 
 -- 📤 Download request sent
 -- ℹ️ Attempting to load @sam/Llama-Herder@1.0.3 package
