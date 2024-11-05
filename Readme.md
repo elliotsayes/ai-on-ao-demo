@@ -3,9 +3,9 @@
 Getting started with AI on AO using the [Llama-Herder](https://github.com/permaweb/llama-herder) library.
 
 ## Prerequisites
-- Acquire some wrapped Arweave ($wAR) tokens
-  - To turn $AR into $wAR, go to [aox.xyz](https://aox.xyz). Just `0.001` $wAR is plenty to get started.
 - Have the AOS CLI installed `npm i -g https://get_ao.g8way.io`
+- Acquire some wrapped Arweave ($wAR) tokens
+  - Buy using ETH/USDC at [wardepot.arweave.net](https://wardepot.arweave.net/)or convert from $AR, using [aox.xyz](https://aox.xyz). Just `0.001` $wAR is plenty to get started.
 
 ## Running the demo
 - Spin up a new AOS process: `aos my-ai-process`
